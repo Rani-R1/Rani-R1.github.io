@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - ShopEasy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>ShopEasy</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grocery.html">Grocery</a></li>
+          <li><a href="pharmaceutical.html">Pharmaceutical</a></li>
+          <li><a href="stationery.html">Stationery</a></li>
+          <li><a href="misc.html">Miscellaneous</a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="login.html" id="login-btn">Login</a>
+        <a href="signup.html" id="signup-btn" class="active">Sign Up</a>
+        <div id="user-profile" class="hidden">
+          <span id="username">User</span>
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="auth-section">
+    <div class="container">
+      <div class="auth-container">
+        <h2>Create an Account</h2>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="firstName" required placeholder="Enter your first name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="lastName" required placeholder="Enter your last name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Create a password">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirmPassword" required placeholder="Confirm your password">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Location</label>
+            <div id="map-container">
+              <div id="map"></div>
+              <p>Click on the map to set your location or use the button below:</p>
+              <button type="button" id="get-location" class="btn secondary-btn">Get My Location</button>
+              <input type="hidden" id="latitude" name="latitude">
+              <input type="hidden" id="longitude" name="longitude">
+            </div>
+          </div>
+          <button type="submit" class="btn primary-btn">Sign Up</button>
+        </form>
+        <div class="auth-footer">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ShopEasy</h3>
+          <p>Your one-stop shop for all your needs. We provide quality products at affordable prices.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="grocery.html">Grocery</a></li>
+            <li><a href="pharmaceutical.html">Pharmaceutical</a></li>
+            <li><a href="stationery.html">Stationery</a></li>
+            <li><a href="misc.html">Miscellaneous</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: rarizik@student.orbital.education</p>
+          <p>Phone: +355 69 323 3848</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
+

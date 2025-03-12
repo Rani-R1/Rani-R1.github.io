@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grocery - ShopEasy</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>ShopEasy</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="grocery.html">Grocery</a></li>
+        <li><a href="pharmaceutical.html">Pharmaceutical</a></li>
+        <li><a href="stationery.html">Stationery</a></li>
+        <li><a href="misc.html">Miscellaneous</a></li>
+        <li><a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="login.html" id="login-btn">Login</a>
+      <a href="signup.html" id="signup-btn">Sign Up</a>
+      <div id="user-profile" class="hidden">
+        <span id="username">User</span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="category-banner grocery-banner">
+  <div class="container">
+    <h2>Grocery</h2>
+    <p>Fresh produce and pantry essentials for your daily needs</p>
+  </div>
+</section>
+
+<section class="product-filters">
+  <div class="container">
+    <div class="filters">
+      <div class="filter-group">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+          <option value="popularity">Popularity</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="newest">Newest First</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products-section">
+  <div class="container">
+    <div class="products" id="grocery-products">
+      <!-- Products will be loaded here via JavaScript -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>ShopEasy</h3>
+        <p>Your one-stop shop for all your needs. We provide quality products at affordable prices.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grocery.html">Grocery</a></li>
+          <li><a href="pharmaceutical.html">Pharmaceutical</a></li>
+          <li><a href="stationery.html">Stationery</a></li>
+          <li><a href="misc.html">Miscellaneous</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: rarizik@student.orbital.education</p>
+        <p>Phone: +355 69 323 3848</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+
+<script>
+    // Add this script to check if everything is loading correctly
+    console.log("Page loaded");
+    console.log("Products container:", document.getElementById("grocery-products"));
+</script>
+</body>
+</html>
+

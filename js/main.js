@@ -18,11 +18,9 @@ const featuredProducts = [
     reviews: 50,
     category: "clothing",
   },
-  // Add more products as needed
 ]
 
 
-// Load products into a container
 function loadProducts(container, productsArray) {
   container.innerHTML = ""
 

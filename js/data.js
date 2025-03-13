@@ -4,7 +4,7 @@ const products = {
       id: "g1",
       name: "Fresh Organic Apples",
       price: 4.99,
-      image: "C:\Users\Admin\Rani-R1.github.io\images\products\Grocery\apple.jpg", 
+      image: ".\images\products\Grocery\apple.jpeg", 
       rating: 4.5,
       reviews: 128,
     },

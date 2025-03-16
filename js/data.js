@@ -52,7 +52,7 @@ const products = {
       id: "g7",
       name: "Fresh Avocados",
       price: 5.99,
-      image: "./images/products/Grocery/avocado.jpeg",
+      image: "./images/products/Grocery/avoado.jpeg",
       rating: 4.9,
       reviews: 203,
     },

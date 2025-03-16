@@ -4,7 +4,7 @@ const products = {
       id: "g1",
       name: "Fresh Organic Apples",
       price: 4.99,
-      image:"./images/products/Grocery/apple.png", 
+      image:"./images/products/Grocery/apple.gif", 
       rating: 4.5,
       reviews: 128,
     },

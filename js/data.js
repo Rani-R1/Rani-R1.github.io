@@ -92,7 +92,7 @@ const products = {
       id: "g12",
       name: "Ketchup",
       price: 2.49,
-      image: "./images/products/Grocery/ketchup.jpeg",
+      image: "./images/products/Grocery/ketchup.png",
       rating: 4.3,
       reviews: 101,
     }
@@ -110,7 +110,7 @@ const products = {
       id: "p2",
       name: "Painkillers",
       price: 7.49,
-      image: "./images/products/Pharma/painkillers.jpg",
+      image: "./images/products/Pharma/Painkillers.jpg",
       rating: 4.6,
       reviews: 203,
     },

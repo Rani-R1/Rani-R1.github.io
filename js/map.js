@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initMap() {
   console.log("Initializing map...")
 
-  const defaultLocation = { lat: 40.7128, lng: -74.006 } 
+  const defaultLocation = { lat: 41.327953, lng: 19.819025 } 
 
   const mapContainer = document.getElementById("map")
   if (!mapContainer) {
